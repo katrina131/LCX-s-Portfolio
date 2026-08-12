@@ -260,18 +260,27 @@ a{color:inherit;text-decoration:none}
 
 /* ===== 短剧宣发文案栏 ===== */
 /* ===== 短剧宣发文案栏 ===== */
+.drama-block{margin-bottom:56px}
+.drama-block:last-child{margin-bottom:0}
+.drama-title{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.drama-title .idx{
+  flex-shrink:0;font-family:var(--font-en);font-size:34px;font-weight:600;
+  color:var(--accent);line-height:1;
+}
+.drama-title h3{font-size:20px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.drama-title .sub{font-size:13px;color:var(--ink-faint);letter-spacing:.02em}
 .drama-overview{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:30px 34px;box-shadow:var(--shadow);margin-bottom:30px;
-  display:grid;grid-template-columns:1fr;gap:18px;
+  padding:26px 30px;box-shadow:var(--shadow);margin-bottom:24px;
+  display:grid;grid-template-columns:1fr;gap:16px;
 }
 .drama-ov-item{display:flex;gap:16px;align-items:baseline}
 .drama-ov-item .k{
-  flex-shrink:0;width:82px;font-size:12px;letter-spacing:.1em;color:var(--accent);
+  flex-shrink:0;width:70px;font-size:12px;letter-spacing:.08em;color:var(--accent);
   font-weight:600;padding-top:2px;
 }
 .drama-ov-item .v{font-size:14.5px;color:var(--ink);line-height:1.7}
-.copy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.copy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .copy-card{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
   padding:32px;box-shadow:var(--shadow);position:relative;overflow:hidden;
@@ -283,7 +292,7 @@ a{color:inherit;text-decoration:none}
   font-size:120px;color:var(--line);line-height:1;
 }
 .copy-card .label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
-.copy-card h3{font-size:19px;font-weight:600;margin-bottom:14px;position:relative;z-index:2}
+.copy-card h3,.copy-card h4{font-size:17px;font-weight:600;margin-bottom:12px;position:relative;z-index:2;color:var(--ink)}
 .copy-card p{font-size:14.5px;color:var(--ink-soft);position:relative;z-index:2;white-space:pre-line}
 .copy-card .foot{margin-top:18px;font-size:13px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:14px}
 
@@ -564,67 +573,137 @@ a{color:inherit;text-decoration:none}
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">04 — Short Drama Marketing</div>
-      <h2 class="section-title">短剧宣发策划<span class="cn">《他本该光芒万丈》宣发 Brief</span></h2>
+      <h2 class="section-title">短剧宣发策划<span class="cn">小红书短剧整体宣发 Brief</span></h2>
       <p class="section-desc">
-        小红书暑期档豪门兄弟情感救赎剧的整体宣发策划。围绕核心卖点拆解四大传播点位，
-        分层触达不同用户圈层。
+        三部小红书短剧的整体宣发策划，涵盖项目定位、话题矩阵设计与分层传播点位拆解。
+        （涉及未播剧集的具体信息已做脱敏处理）
       </p>
     </div>
 
-    <!-- 项目概览卡 -->
-    <div class="drama-overview reveal">
-      <div class="drama-ov-item">
-        <span class="k">项目定位</span>
-        <span class="v">豪门兄弟 · 恨海情天 · 双向救赎</span>
+    <!-- ========== 项目一：痴人之爱 ========== -->
+    <div class="drama-block reveal">
+      <div class="drama-title">
+        <span class="idx">01</span>
+        <div>
+          <h3>《痴人之爱》· 双定位情感短剧</h3>
+          <span class="sub">小红书首部双结局情感短剧 · 品质调性 × 用户爽感双线并行</span>
+        </div>
       </div>
-      <div class="drama-ov-item">
-        <span class="k">核心策略</span>
-        <span class="v">围绕"恨海情天"情感救赎主线做高光铺量，突出兄弟关系互动、复仇 vs 救赎双线与纯爽观感</span>
+      <div class="drama-overview">
+        <div class="drama-ov-item"><span class="k">项目定位</span><span class="v">小红书首部"双结局"情感短剧——真假结局由观众票选，用互动悬念放大参与感</span></div>
+        <div class="drama-ov-item"><span class="k">双定位</span><span class="v">ToB 以"电影级质感 / 双结局"定品质调性；ToC 以"全网最疯替身文学 / 禁忌情感"拉观看</span></div>
+        <div class="drama-ov-item"><span class="k">我的角色</span><span class="v">双定位策略制定 · 演员流量运营规划 · 高光切片传播节奏设计</span></div>
       </div>
-      <div class="drama-ov-item">
-        <span class="k">主话题矩阵</span>
-        <span class="v">#他本该光芒万丈　#小红书短剧暑期档　#豪门兄弟恨海情天双向救赎　#主演卡颜局</span>
-      </div>
-      <div class="drama-ov-item">
-        <span class="k">我的角色</span>
-        <span class="v">宣发 Brief 撰写 · 传播点位拆解 · 话题矩阵设计</span>
+      <div class="copy-grid">
+        <div class="copy-card">
+          <div class="label">策略一 · 双定位</div>
+          <h4>品质调性 × 用户爽感</h4>
+          <p>对外用"双结局""电影级质感"树立品质心智，对内用高情绪张力的话题拉动观看，
+两套话术分别服务于调性沉淀与流量拉新，兼顾口碑与数据。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">策略二 · 演员影响力</div>
+          <h4>用好演员流量导流</h4>
+          <p>通过艺人账号运营、角色人设强化与抖音 + 小红书双平台发布规划，
+最大化演员流量对剧集的导流，同步沉淀个人粉丝资产。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">策略三 · 传播节奏</div>
+          <h4>钩子前置 + 悬念拆解 + 爆点切片</h4>
+          <p>用"钩子前置 + 悬念拆解 + 情绪切片"让观众忽略慢热铺垫、预知高能主线；
+预热期前置高光内容测试跑爆，再集中资源重投跑出的爆点。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">策略四 · 渠道侧重</div>
+          <h4>分平台差异化打法</h4>
+          <p>小红书主打争议策划"讨论场"强曝光；抖音以主演 + 高爆情绪切片导流；
+微博视发酵情况决定是否加投，形成主次分明的渠道矩阵。</p>
+        </div>
       </div>
     </div>
 
-    <div class="copy-grid">
-
-      <div class="copy-card reveal">
-        <div class="label">点位一 · 兄弟情</div>
-        <h3>极致反差的人设与情感钩子</h3>
-        <p>前期主打"疯批纯恨"，后期转向"治愈救赎"，用爱恨同源的极致反差强化豪门兄弟相爱相杀的主设定。
-卡颜向突出高颜值性张力阵容，人设向锚定"病娇白切黑复仇少爷 ✖ 疯批爹系掌控欲养兄"，破圈吸引相关圈层用户。</p>
-        <div class="foot">目标：破圈拉新 · 承接暑期档垂类用户</div>
+    <!-- ========== 项目二：关于我和死对头同名这件事 ========== -->
+    <div class="drama-block reveal">
+      <div class="drama-title">
+        <span class="idx">02</span>
+        <div>
+          <h3>《关于我和死对头同名这件事》· 校园纯爱短剧</h3>
+          <span class="sub">小众赛道破局 · 以节点营销 + 导演 IP 补短板、拉口碑</span>
+        </div>
       </div>
-
-      <div class="copy-card reveal">
-        <div class="label">点位二 · 故事线</div>
-        <h3>复仇 vs 救赎强反转铺量</h3>
-        <p>聚焦剧情主线，围绕"白切黑布局攻略""父亲假死真相反转""失忆和好""双向救赎联手复仇"等强反转名场面，
-铺展剧情钩子与名场面切片，精准吸引短剧粉与路人观众。</p>
-        <div class="foot">目标：剧情向种草 · 提升完播与追更</div>
+      <div class="drama-overview">
+        <div class="drama-ov-item"><span class="k">项目诊断</span><span class="v">劣势：校园言情赛道小众、素人班底、前期剧情平淡；优势：知名导演口碑在线、小清新品质感强</span></div>
+        <div class="drama-ov-item"><span class="k">核心思路</span><span class="v">补短板 + 延长板——节点营销拓受众、导演 IP 定调性、高光助推讨论、平台收割口碑</span></div>
+        <div class="drama-ov-item"><span class="k">我的角色</span><span class="v">优劣势诊断 · 四阶段传播策略设计 · 话题矩阵与征稿 Brief 撰写</span></div>
       </div>
-
-      <div class="copy-card reveal">
-        <div class="label">点位三 · 爽感体验</div>
-        <h3>多标签齐发的纯爽剧观感</h3>
-        <p>以"反转复仇""高智商女王""白切黑""爽文大女二"等多标签同时发力，
-用狗血抓马、节奏带感的剧情切片扩大传播面，覆盖更广泛的泛娱乐用户。</p>
-        <div class="foot">目标：扩量传播 · 话题热度冲榜</div>
+      <div class="copy-grid">
+        <div class="copy-card">
+          <div class="label">动作一 · 节点营销</div>
+          <h4>借势高考节点打年轻人群</h4>
+          <p>结合上线期与高考出分 / 志愿填报节点，用"高考抉择""备考家庭""青春意难平"等贴合剧情，
+精准狙击准大学生与关注高考的用户，放大清爽治愈、圆满青春遗憾的情绪主题。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">动作二 · 导演 IP</div>
+          <h4>用导演 IP 吸引赛道受众</h4>
+          <p>盘点导演以往的清爽系校园男主，借"导演严选男主"话题引流；
+官宣期联动合作艺人发布支持笔记，以颜值向内容扩大传播圈层，吸引导演粉与女性观众。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">动作三 · 高光助推</div>
+          <h4>名场面放大牵引长线情绪</h4>
+          <p>放大 CP / 剧情名场面与甜虐看点，抓取亮点台词做情绪牵引；
+播出期在小红书按高光预判与 UGC 热点分角度下 Brief 征稿投放，提高期待、引导追看。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">动作四 · 平台收割</div>
+          <h4>立"校园短剧新标杆"心智</h4>
+          <p>从播放数据、平台讨论、导演 IP 含金量、剧集观感多维度印证平台在赛道的影响力，
+强化"品质短剧"用户认知，为校园纯爱赛道立新类型标杆。</p>
+        </div>
       </div>
+    </div>
 
-      <div class="copy-card reveal">
-        <div class="label">点位四 · 借势热剧</div>
-        <h3>题材捆绑借势破圈</h3>
-        <p>借助同题材热剧的外围热度进行题材捆绑，利用"恨海情天""双向救赎"等带感设定，
-在相关兴趣圈层中精准圈揽用户，实现低成本借势破圈。</p>
-        <div class="foot">目标：借势引流 · 承接相邻圈层用户</div>
+    <!-- ========== 项目三：他本该光芒万丈 ========== -->
+    <div class="drama-block reveal">
+      <div class="drama-title">
+        <span class="idx">03</span>
+        <div>
+          <h3>《他本该光芒万丈》· 豪门兄弟情感救赎剧</h3>
+          <span class="sub">小红书暑期档 · 恨海情天 · 双向救赎</span>
+        </div>
       </div>
-
+      <div class="drama-overview">
+        <div class="drama-ov-item"><span class="k">项目定位</span><span class="v">豪门兄弟 · 恨海情天 · 双向救赎</span></div>
+        <div class="drama-ov-item"><span class="k">核心策略</span><span class="v">围绕"恨海情天"情感救赎主线做高光铺量，突出兄弟关系互动、复仇 vs 救赎双线与纯爽观感</span></div>
+        <div class="drama-ov-item"><span class="k">我的角色</span><span class="v">宣发 Brief 撰写 · 传播点位拆解 · 话题矩阵设计</span></div>
+      </div>
+      <div class="copy-grid">
+        <div class="copy-card">
+          <div class="label">点位一 · 兄弟情</div>
+          <h4>极致反差的人设与情感钩子</h4>
+          <p>前期主打"疯批纯恨"、后期转向"治愈救赎"，用爱恨同源的极致反差强化相爱相杀主设定；
+卡颜向突出高颜值张力阵容，人设向锚定鲜明角色标签，破圈吸引相关圈层用户。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">点位二 · 故事线</div>
+          <h4>复仇 vs 救赎强反转铺量</h4>
+          <p>聚焦剧情主线，围绕布局攻略、真相反转、失忆和好、双向救赎等强反转名场面，
+铺展剧情钩子与切片，精准吸引短剧粉与路人观众。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">点位三 · 爽感体验</div>
+          <h4>多标签齐发的纯爽剧观感</h4>
+          <p>以"反转复仇""高智商女王"等多标签同时发力，用节奏带感的剧情切片扩大传播面，
+覆盖更广泛的泛娱乐用户。</p>
+        </div>
+        <div class="copy-card">
+          <div class="label">点位四 · 借势热剧</div>
+          <h4>题材捆绑借势破圈</h4>
+          <p>借助同题材热剧的外围热度做题材捆绑，利用带感情感设定在相关兴趣圈层精准圈揽用户，
+实现低成本借势破圈。</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
