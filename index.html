@@ -259,6 +259,18 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ===== 短剧宣发文案栏 ===== */
+/* ===== 短剧宣发文案栏 ===== */
+.drama-overview{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 34px;box-shadow:var(--shadow);margin-bottom:30px;
+  display:grid;grid-template-columns:1fr;gap:18px;
+}
+.drama-ov-item{display:flex;gap:16px;align-items:baseline}
+.drama-ov-item .k{
+  flex-shrink:0;width:82px;font-size:12px;letter-spacing:.1em;color:var(--accent);
+  font-weight:600;padding-top:2px;
+}
+.drama-ov-item .v{font-size:14.5px;color:var(--ink);line-height:1.7}
 .copy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .copy-card{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
@@ -327,7 +339,7 @@ a{color:inherit;text-decoration:none}
       <a href="#video">Video 视频</a>
       <a href="#shots">Events 本地生服营销</a>
       <a href="#ppt">Variety 综艺策划</a>
-      <a href="#copy">Copywriting 宣发文案</a>
+      <a href="#copy">Copywriting 短剧宣发</a>
       <a href="#contact">Contact 联系</a>
     </div>
   </div>
@@ -551,49 +563,66 @@ a{color:inherit;text-decoration:none}
 <section class="section" id="copy" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">04 — Copywriting</div>
-      <h2 class="section-title">短剧宣发文案<span class="cn">宣发 Brief 与文案作品</span></h2>
+      <div class="eyebrow">04 — Short Drama Marketing</div>
+      <h2 class="section-title">短剧宣发策划<span class="cn">《他本该光芒万丈》宣发 Brief</span></h2>
       <p class="section-desc">
-        填法：直接把每段文案的标题和正文替换成你的真实内容即可，文字会自动排版。
+        小红书暑期档豪门兄弟情感救赎剧的整体宣发策划。围绕核心卖点拆解四大传播点位，
+        分层触达不同用户圈层。
       </p>
     </div>
+
+    <!-- 项目概览卡 -->
+    <div class="drama-overview reveal">
+      <div class="drama-ov-item">
+        <span class="k">项目定位</span>
+        <span class="v">豪门兄弟 · 恨海情天 · 双向救赎</span>
+      </div>
+      <div class="drama-ov-item">
+        <span class="k">核心策略</span>
+        <span class="v">围绕"恨海情天"情感救赎主线做高光铺量，突出兄弟关系互动、复仇 vs 救赎双线与纯爽观感</span>
+      </div>
+      <div class="drama-ov-item">
+        <span class="k">主话题矩阵</span>
+        <span class="v">#他本该光芒万丈　#小红书短剧暑期档　#豪门兄弟恨海情天双向救赎　#主演卡颜局</span>
+      </div>
+      <div class="drama-ov-item">
+        <span class="k">我的角色</span>
+        <span class="v">宣发 Brief 撰写 · 传播点位拆解 · 话题矩阵设计</span>
+      </div>
+    </div>
+
     <div class="copy-grid">
 
-      <!-- 文案卡片 1 -->
       <div class="copy-card reveal">
-        <div class="label">短剧宣发 Brief</div>
-        <!-- 【替换】文案标题 -->
-        <h3>《短剧名称》宣发 Brief</h3>
-        <!-- 【替换】文案正文，可多段，换行会保留 -->
-        <p>在这里粘贴你的宣发 brief 正文。
-可以包含：核心卖点、目标人群、传播节奏、平台策略、创意 slogan 等。
-换行会被自动保留，直接从文档里复制粘贴即可。</p>
-        <div class="foot">投放平台 · 传播成果（如有数据可写）</div>
+        <div class="label">点位一 · 兄弟情</div>
+        <h3>极致反差的人设与情感钩子</h3>
+        <p>前期主打"疯批纯恨"，后期转向"治愈救赎"，用爱恨同源的极致反差强化豪门兄弟相爱相杀的主设定。
+卡颜向突出高颜值性张力阵容，人设向锚定"病娇白切黑复仇少爷 ✖ 疯批爹系掌控欲养兄"，破圈吸引相关圈层用户。</p>
+        <div class="foot">目标：破圈拉新 · 承接暑期档垂类用户</div>
       </div>
 
-      <!-- 文案卡片 2 -->
       <div class="copy-card reveal">
-        <div class="label">Slogan / 主视觉文案</div>
-        <h3>项目名称 · 主推文案</h3>
-        <p>这里放一组你写的 slogan 或主推文案。
-一行一句，节奏感强的短句更适合展示。</p>
-        <div class="foot">应用场景 · 项目背景</div>
+        <div class="label">点位二 · 故事线</div>
+        <h3>复仇 vs 救赎强反转铺量</h3>
+        <p>聚焦剧情主线，围绕"白切黑布局攻略""父亲假死真相反转""失忆和好""双向救赎联手复仇"等强反转名场面，
+铺展剧情钩子与名场面切片，精准吸引短剧粉与路人观众。</p>
+        <div class="foot">目标：剧情向种草 · 提升完播与追更</div>
       </div>
 
-      <!-- 文案卡片 3 -->
       <div class="copy-card reveal">
-        <div class="label">传播策略</div>
-        <h3>某短剧上线传播方案</h3>
-        <p>概述你的传播策略思路：如何分阶段造势、KOL 选择逻辑、话题设计等。</p>
-        <div class="foot">你的角色 · 成果</div>
+        <div class="label">点位三 · 爽感体验</div>
+        <h3>多标签齐发的纯爽剧观感</h3>
+        <p>以"反转复仇""高智商女王""白切黑""爽文大女二"等多标签同时发力，
+用狗血抓马、节奏带感的剧情切片扩大传播面，覆盖更广泛的泛娱乐用户。</p>
+        <div class="foot">目标：扩量传播 · 话题热度冲榜</div>
       </div>
 
-      <!-- 文案卡片 4 -->
       <div class="copy-card reveal">
-        <div class="label">推文 / 脚本</div>
-        <h3>宣发推文 / 短视频脚本</h3>
-        <p>放一段你写的推文或短视频脚本节选，展示文字功底与内容节奏。</p>
-        <div class="foot">平台 · 数据（如有）</div>
+        <div class="label">点位四 · 借势热剧</div>
+        <h3>题材捆绑借势破圈</h3>
+        <p>借助同题材热剧的外围热度进行题材捆绑，利用"恨海情天""双向救赎"等带感设定，
+在相关兴趣圈层中精准圈揽用户，实现低成本借势破圈。</p>
+        <div class="foot">目标：借势引流 · 承接相邻圈层用户</div>
       </div>
 
     </div>
