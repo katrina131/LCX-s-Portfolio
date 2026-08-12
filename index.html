@@ -590,10 +590,8 @@ a{color:inherit;text-decoration:none}
     <div class="eyebrow reveal">Let's Connect</div>
     <h2 class="section-title reveal">期待与你相遇<span class="cn">欢迎联系，一起创造内容</span></h2>
     <div class="contact-links reveal">
-      <!-- 【替换】联系方式：邮箱、微信、小红书、简历下载等 -->
-      <a href="mailto:your@email.com">✉ your@email.com</a>
-      <a href="#">微信 WeChat: your_id</a>
-      <a href="#">小红书 / 主页</a>
+      <a href="mailto:katrina_lcx@163.com">✉ katrina_lcx@163.com</a>
+      <a href="#" onclick="return copyWechat(this)" data-wx="llccxx0131">微信 WeChat: llccxx0131</a>
       <a href="#">下载简历 Resume</a>
     </div>
   </div>
@@ -608,6 +606,15 @@ a{color:inherit;text-decoration:none}
 <div class="lightbox" id="lightbox"><img src="" alt=""></div>
 
 <script>
+/* ===== 复制微信号 ===== */
+function copyWechat(el){
+  var wx=el.getAttribute('data-wx');
+  if(navigator.clipboard){navigator.clipboard.writeText(wx);}
+  var old=el.textContent;
+  el.textContent='已复制微信号 ✓ '+wx;
+  setTimeout(function(){el.textContent=old;},1600);
+  return false;
+}
 /* ===== 移动端导航 ===== */
 document.querySelector('.nav-toggle').addEventListener('click',function(){
   document.querySelector('.nav-links').classList.toggle('open');
