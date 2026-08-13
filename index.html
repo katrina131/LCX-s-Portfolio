@@ -156,11 +156,15 @@ a{color:inherit;text-decoration:none}
 
 /* ===== 能力标签条 ===== */
 .skills-bar{
-  display:flex;flex-wrap:wrap;gap:12px;margin-top:52px;
+  display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:52px;align-items:center;
 }
 .skill-chip{
-  font-size:13px;color:var(--ink-soft);background:var(--bg-card);
-  border:1px solid var(--line);padding:8px 18px;border-radius:999px;
+  font-size:14px;color:var(--ink-soft);letter-spacing:.02em;
+  display:inline-flex;align-items:center;gap:9px;
+}
+.skill-chip::before{
+  content:"";width:5px;height:5px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
 }
 
 /* ===== 视频栏 ===== */
@@ -410,6 +414,7 @@ a{color:inherit;text-decoration:none}
     <div class="skills-bar">
       <span class="skill-chip">Campaign 策划</span>
       <span class="skill-chip">综艺创作</span>
+      <span class="skill-chip">短剧宣发</span>
       <span class="skill-chip">达人营销</span>
       <span class="skill-chip">视频剪辑</span>
       <span class="skill-chip">PPT 制作</span>
