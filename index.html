@@ -334,6 +334,12 @@ a{color:inherit;text-decoration:none}
 }
 .contact-links a:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
 .footer{padding:40px 0;text-align:center;color:var(--ink-faint);font-size:13px}
+.footer-notice{
+  max-width:680px;margin:0 auto 20px;font-size:11.5px;line-height:1.9;
+  color:var(--ink-faint);opacity:.82;letter-spacing:.01em;
+  padding-bottom:20px;border-bottom:1px solid var(--line);
+}
+.footer-copy{font-size:13px;color:var(--ink-faint)}
 
 /* ===== Lightbox 大图查看 ===== */
 .lightbox{position:fixed;inset:0;background:rgba(40,36,32,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:40px;cursor:zoom-out}
@@ -751,7 +757,12 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <footer class="footer">
-  © 2026 廖创新 Katrina · Portfolio · Made with care
+  <p class="footer-notice">
+    本站所展示的策划方案、创意内容与相关成果均为本人参与创作的作品，仅供求职交流与能力展示之用。<br>
+    部分内容已做脱敏与模糊处理，其著作权及相关权益归本人或原作品方所有。<br>
+    未经授权，请勿复制、转载、摘编或用于任何商业用途；本人保留依法追究相关责任的权利。
+  </p>
+  <div class="footer-copy">© 2026 廖创新 Katrina · Portfolio · Made with care</div>
 </footer>
 
 <!-- Lightbox -->
