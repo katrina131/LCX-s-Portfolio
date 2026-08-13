@@ -269,8 +269,8 @@ a{color:inherit;text-decoration:none}
 }
 .drama-title h3{font-size:20px;font-weight:600;color:var(--ink);margin-bottom:4px}
 .drama-title .sub{font-size:13px;color:var(--ink-faint);letter-spacing:.02em;display:block}
-.title-topic{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px}
-.title-topic .thint{font-size:11.5px;color:#7c8a78;font-weight:500;letter-spacing:.04em}
+.title-topic{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin-top:14px}
+.title-topic .thint{font-size:11px;color:var(--ink-faint);font-weight:500;letter-spacing:.08em;text-transform:uppercase}
 .drama-overview{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
   padding:26px 30px;box-shadow:var(--shadow);margin-bottom:24px;
@@ -286,28 +286,29 @@ a{color:inherit;text-decoration:none}
 .drama-topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center}
 .drama-topics .tlabel{font-size:12px;color:var(--ink-faint);letter-spacing:.06em;margin-right:2px}
 .topic-btn{
-  display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
   color:#fff;background:#7c8a78;border:1px solid #7c8a78;
-  padding:9px 18px 9px 16px;border-radius:999px;letter-spacing:.01em;
-  box-shadow:0 4px 14px rgba(124,138,120,.4);position:relative;
-  transition:transform .2s,box-shadow .2s,background .2s;
-  animation:topicPulse 2.4s ease-in-out infinite;
+  padding:9px 14px 9px 16px;border-radius:999px;letter-spacing:.01em;
+  box-shadow:0 3px 12px rgba(124,138,120,.32);position:relative;
+  transition:transform .25s,box-shadow .25s,background .25s,padding .25s;
 }
-.topic-btn::before{content:"#";color:#fff;opacity:.85;font-weight:700}
-.topic-btn::after{
-  content:"↗";margin-left:2px;font-size:14px;font-weight:700;
-  transition:transform .2s;display:inline-block;
+.topic-btn::before{content:"#";color:#fff;opacity:.8;font-weight:700}
+.topic-btn .arw{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.2);
+  font-size:13px;line-height:1;margin-left:2px;
+  animation:arwSlide 1.8s ease-in-out infinite;
 }
 .topic-btn:hover{
   transform:translateY(-2px);background:#68765f;border-color:#68765f;
-  box-shadow:0 8px 22px rgba(104,118,95,.5);animation:none;
+  box-shadow:0 8px 22px rgba(104,118,95,.48);
 }
-.topic-btn:hover::after{transform:translate(2px,-2px)}
-@keyframes topicPulse{
-  0%,100%{box-shadow:0 4px 14px rgba(124,138,120,.4)}
-  50%{box-shadow:0 4px 20px rgba(124,138,120,.55),0 0 0 5px rgba(124,138,120,.14)}
+.topic-btn:hover .arw{animation:none;background:rgba(255,255,255,.32);transform:translateX(2px)}
+@keyframes arwSlide{
+  0%,100%{transform:translateX(0);opacity:.85}
+  50%{transform:translateX(3px);opacity:1}
 }
-@media (prefers-reduced-motion:reduce){.topic-btn{animation:none}}
+@media (prefers-reduced-motion:reduce){.topic-btn .arw{animation:none}}
 .copy-card{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
   padding:32px;box-shadow:var(--shadow);position:relative;overflow:hidden;
@@ -613,8 +614,8 @@ a{color:inherit;text-decoration:none}
           <h3>《犟骨》· 非遗女书双女救赎短剧</h3>
           <span class="sub">首部非遗女书双女救赎短剧 · 剧情 × 文化 × 女性三线并行</span>
           <div class="title-topic">
-            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/normal/691d8bcd01d4000000000001?fullscreen=true&naviHidden=yes">短剧犟骨双女救赎太带感了</a>
-            <span class="thint">点击跳转「营销投放话题页」</span>
+            <span class="thint">点击查看 · 营销投放话题页</span>
+            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/normal/691d8bcd01d4000000000001?fullscreen=true&naviHidden=yes">短剧犟骨双女救赎太带感了<span class="arw">→</span></a>
           </div>
         </div>
       </div>
@@ -655,8 +656,8 @@ a{color:inherit;text-decoration:none}
           <h3>《关于我和死对头同名这件事》· 校园纯爱短剧</h3>
           <span class="sub">吴夏帆导演作品 · 以节点营销 + 导演 IP 补短板、拉口碑</span>
           <div class="title-topic">
-            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/normal/6858fd3901c0000000000001?fullscreen=true&naviHidden=yes">暑期档青春校园短剧天花板</a>
-            <span class="thint">点击跳转「营销投放话题页」</span>
+            <span class="thint">点击查看 · 营销投放话题页</span>
+            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/normal/6858fd3901c0000000000001?fullscreen=true&naviHidden=yes">暑期档青春校园短剧天花板<span class="arw">→</span></a>
           </div>
         </div>
       </div>
@@ -697,8 +698,8 @@ a{color:inherit;text-decoration:none}
           <h3>《他本该光芒万丈》· 豪门兄弟情感救赎剧</h3>
           <span class="sub">小红书暑期档 · 恨海情天 · 双向救赎</span>
           <div class="title-topic">
-            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/ugc/689067320054000000000001?fullscreen=true&naviHidden=yes">豪门兄弟恨海情天双向救赎</a>
-            <span class="thint">点击跳转「营销投放话题页」</span>
+            <span class="thint">点击查看 · 营销投放话题页</span>
+            <a class="topic-btn" target="_blank" rel="noopener" href="https://www.xiaohongshu.com/topic/ugc/689067320054000000000001?fullscreen=true&naviHidden=yes">豪门兄弟恨海情天双向救赎<span class="arw">→</span></a>
           </div>
         </div>
       </div>
