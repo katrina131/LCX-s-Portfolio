@@ -226,8 +226,8 @@ a{color:inherit;text-decoration:none}
   overflow:hidden;box-shadow:var(--shadow);
 }
 .ppt-stage{position:relative;aspect-ratio:16/9;background:var(--bg-soft)}
-.ppt-slide{position:absolute;inset:0;opacity:0;transition:opacity .5s;display:flex;align-items:center;justify-content:center}
-.ppt-slide.active{opacity:1}
+.ppt-slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .5s;display:flex;align-items:center;justify-content:center}
+.ppt-slide.active{opacity:1;pointer-events:auto}
 .ppt-slide img{width:100%;height:100%;object-fit:contain}
 .ppt-ph{
   width:100%;height:100%;display:flex;flex-direction:column;gap:10px;
