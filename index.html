@@ -374,6 +374,33 @@ a{color:inherit;text-decoration:none}
   .hero{padding:80px 0 60px}
   .wrap{padding:0 20px}
 }
+
+/* ===== 打印 / 导出 PDF 样式（仅打印时生效，不影响网页显示）===== */
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  html,body{background:#f4f1ec!important}
+  /* 隐藏导航、灯箱 */
+  .nav,.lightbox{display:none!important}
+  /* 强制显示所有淡入元素，禁用动画 */
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  *{animation:none!important}
+  /* 视频 iframe 无法在 PDF 中播放，替换为占位提示 */
+  .video-embed iframe{display:none!important}
+  .video-embed::after{
+    content:"▶ 在线视频 · 请访问网页版播放";
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:var(--ink-faint);font-size:14px;letter-spacing:.08em;
+  }
+  /* 综艺轮播：4 张方案竖排完整展示 */
+  .ppt-stage{aspect-ratio:auto!important}
+  .ppt-slide{position:relative!important;inset:auto!important;opacity:1!important;pointer-events:auto!important;display:block!important;margin-bottom:18px}
+  .ppt-slide img{width:100%!important;height:auto!important;object-fit:contain!important}
+  .ppt-ctrl,.ppt-caption{display:none!important}
+  /* 分页：避免卡片被拦腰截断 */
+  .video-card,.shot-item,.copy-card,.drama-overview,.drama-block{break-inside:avoid;page-break-inside:avoid}
+  .section-head,.drama-title{break-after:avoid;page-break-after:avoid}
+  .section{padding:44px 0}
+}
 </style>
 </head>
 <body>
