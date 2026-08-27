@@ -224,6 +224,23 @@ a{color:inherit;text-decoration:none}
 .shot-cap{padding:14px 16px;font-size:13px;color:var(--ink-soft);line-height:1.6;flex:1}
 .shot-cap strong{color:var(--ink);font-weight:600;font-size:13.5px}
 
+/* ===== 游戏品牌海外营销栏（科隆游戏展）===== */
+.gc-role{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px}
+.gc-chip{
+  flex:1;min-width:220px;background:var(--bg-card);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:18px 20px;box-shadow:var(--shadow);
+}
+.gc-chip .gc-num{font-family:var(--font-en);font-size:26px;color:var(--accent);line-height:1.1}
+.gc-chip b{display:block;font-size:14px;color:var(--ink);margin:6px 0 4px;font-weight:600}
+.gc-chip span{font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+.gc-sub{
+  font-family:var(--font-cn);font-size:21px;font-weight:600;color:var(--ink);
+  margin:42px 0 18px;display:flex;align-items:baseline;gap:12px;
+}
+.gc-sub::before{content:"";width:24px;height:1px;background:var(--accent);align-self:center}
+.gc-sub .en{font-size:12px;font-weight:400;color:var(--ink-faint);letter-spacing:.08em}
+.gc-item img{object-fit:contain;background:var(--bg-soft);height:230px}
+
 /* ===== 综艺 PPT 栏（轮播）===== */
 .ppt-viewer{
   background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
@@ -397,8 +414,8 @@ a{color:inherit;text-decoration:none}
   .ppt-slide img{width:100%!important;height:auto!important;object-fit:contain!important}
   .ppt-ctrl,.ppt-caption{display:none!important}
   /* 分页：避免卡片被拦腰截断 */
-  .video-card,.shot-item,.copy-card,.drama-overview,.drama-block{break-inside:avoid;page-break-inside:avoid}
-  .section-head,.drama-title{break-after:avoid;page-break-after:avoid}
+  .video-card,.shot-item,.copy-card,.drama-overview,.drama-block,.gc-chip{break-inside:avoid;page-break-inside:avoid}
+  .section-head,.drama-title,.gc-sub{break-after:avoid;page-break-after:avoid}
   .section{padding:44px 0}
 }
 </style>
@@ -413,6 +430,7 @@ a{color:inherit;text-decoration:none}
     <div class="nav-links">
       <a href="#video">Video 视频</a>
       <a href="#ppt">Variety 综艺策划</a>
+      <a href="#gamescom">Game 游戏品牌营销</a>
       <a href="#shots">Events 本地生服营销</a>
       <a href="#copy">Copywriting 短剧宣发</a>
       <a href="#contact">Contact 联系</a>
@@ -592,11 +610,89 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
+<!-- ==================== 游戏品牌海外营销（科隆游戏展）==================== -->
+<section class="section" id="gamescom" style="border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 — Game Brand Global Marketing</div>
+      <h2 class="section-title">游戏品牌海外营销<span class="cn">腾讯天美 · 王者荣耀 × 科隆游戏展</span></h2>
+      <p class="section-desc">
+        科隆游戏展（gamescom）是全球规模最大的游戏展会之一，每年 8 月于德国科隆举办，
+        是游戏厂商面向全球玩家与媒体发声的核心舞台。王者荣耀（Honor of Kings）作为全球日活超 1 亿的 MOBA 手游，
+        参展 gamescom 是其全球化战略的关键一步——通过现场试玩、限定周边与社媒传播直接触达海外玩家，
+        建立品牌认知、推动 IP 文化出海。以下为我在展会项目中负责的部分作品。
+      </p>
+    </div>
+
+    <div class="gc-role reveal">
+      <div class="gc-chip">
+        <div class="gc-num">40+</div>
+        <b>社媒传播物料</b>
+        <span>官宣海报、试玩手册、易拉宝等 40+ 展会物料的策划与对接，覆盖海外社媒官宣节奏</span>
+      </div>
+      <div class="gc-chip">
+        <div class="gc-num">40+</div>
+        <b>创意周边 sku</b>
+        <span>策划王者 IP 展会创意周边以促进二次传播，独立对接供应商完成设计、打样与大货制作</span>
+      </div>
+      <div class="gc-chip">
+        <div class="gc-num">2</div>
+        <b>品牌联名合作</b>
+        <span>参与王者荣耀 × 三星、头部茶饮品牌的商务合作执行，设计联名物料与展台互动玩法</span>
+      </div>
+    </div>
+
+    <h3 class="gc-sub reveal">创意周边策划<span class="en">CREATIVE MERCH</span></h3>
+    <div class="shot-grid">
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-merch-1.png" alt="主角登场行李牌与行李箱贴纸组">
+        <div class="shot-cap"><strong>「主角登场」行李牌 + 行李箱贴纸组</strong><br>Q 版角色出行周边，把展会记忆带回日常场景，自带二次传播属性</div>
+      </div>
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-merch-2.jpg" alt="HOK 限定纪念币">
+        <div class="shot-cap"><strong>HOK 限定纪念币</strong><br>展会限定收藏周边，红金礼盒呈现，强化 IP 仪式感</div>
+      </div>
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-merch-3.jpg" alt="角色长版帆布袋">
+        <div class="shot-cap"><strong>角色长版帆布袋</strong><br>伽罗主题超长帆布袋，现场观众上身即成移动广告位</div>
+      </div>
+    </div>
+
+    <h3 class="gc-sub reveal">官宣海报设计<span class="en">KEY VISUAL &amp; POSTERS</span></h3>
+    <div class="shot-grid">
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-poster-1.jpg" alt="集章玩法规则海报">
+        <div class="shot-cap"><strong>集章玩法 · 规则海报</strong><br>「只需三步好礼带回家」，把展台互动机制讲清楚的一张图</div>
+      </div>
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-poster-2.jpg" alt="gamescom 2026 主视觉邀请函">
+        <div class="shot-cap"><strong>gamescom 2026 · 主视觉邀请函</strong><br>四大游戏联票式设计，传递全球超 1 亿日活的 IP 体量</div>
+      </div>
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-poster-3.jpg" alt="展台导览海报">
+        <div class="shot-cap"><strong>展台导览 · HOW TO EXPLORE</strong><br>四大打卡点动线引导，让观众按图索骥玩转 HOK 展台</div>
+      </div>
+    </div>
+
+    <h3 class="gc-sub reveal">现场试玩物料<span class="en">DEMO GUIDEBOOKS</span></h3>
+    <div class="shot-grid">
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-guide-1.jpg" alt="HOK WORLD 试玩手册">
+        <div class="shot-cap"><strong>HOK: WORLD · 试玩手册</strong><br>四大试玩模式导引（Boss / Raid / Explore / Tutorials），降低海外玩家上手门槛</div>
+      </div>
+      <div class="shot-item gc-item reveal">
+        <img src="assets/gamescom-guide-2.jpg" alt="HOK ACE 试玩手册">
+        <div class="shot-cap"><strong>HOK: ACE · 试玩手册</strong><br>新手教程与匹配对战流程指引，服务现场试玩转化</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ==================== 活动页截图 ==================== -->
 <section class="section" id="shots">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">03 — Local Life Marketing</div>
+      <div class="eyebrow">04 — Local Life Marketing</div>
       <h2 class="section-title">本地生服营销活动<span class="cn">线上线下活动返图</span></h2>
       <p class="section-desc">
         覆盖线上会场、线下快闪、城市大屏与话题传播的整合营销 campaign。
@@ -638,7 +734,7 @@ a{color:inherit;text-decoration:none}
 <section class="section" id="copy" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">04 — Short Drama Marketing</div>
+      <div class="eyebrow">05 — Short Drama Marketing</div>
       <h2 class="section-title">短剧宣发策划<span class="cn">小红书短剧整体宣发 Brief</span></h2>
       <p class="section-desc">
         部分已上线短剧的公开传播策略，涵盖项目定位、话题矩阵设计与分层传播点位拆解，仅作个人能力展示，不含任何未公开的商业数据。
